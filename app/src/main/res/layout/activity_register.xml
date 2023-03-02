@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/loginIllustrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/sign_up_illustrate"/>
+        <LinearLayout
+            android:id="@+id/line_one"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/loginIllustrate"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4sp"
+                android:text="Sign up"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="#3C3A36"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:letterSpacing="-0.02"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/body_text"
+                android:layout_width="341dp"
+                android:layout_height="21dp"
+                android:text="Create your account"
+                android:lineSpacingExtra="4sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="#78746D"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line_two"
+            android:layout_below="@id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="13dp">
+
+            <EditText
+                android:id="@+id/name_reg"
+                android:layout_width="343dp"
+                android:layout_height="53dp"
+                android:background="@drawable/edit_text_back"
+                android:hint="Name"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#78746D"
+                android:textColorHint="#78746D"
+                android:lineSpacingExtra="4sp"
+                android:fontFamily="@font/rubik"
+                android:layout_marginBottom="13dp"/>
+            <EditText
+                android:id="@+id/email_reg"
+                android:layout_width="343dp"
+                android:layout_height="53dp"
+                android:background="@drawable/edit_text_back"
+                android:hint="Email"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#78746D"
+                android:textColorHint="#78746D"
+                android:lineSpacingExtra="4sp"
+                android:fontFamily="@font/rubik"
+                android:layout_marginBottom="13dp"/>
+            <EditText
+                android:id="@+id/password_reg"
+                android:layout_width="343dp"
+                android:layout_height="53dp"
+                android:background="@drawable/edit_text_back"
+                android:hint="Password"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#78746D"
+                android:textColorHint="#78746D"
+                android:lineSpacingExtra="4sp"
+                android:fontFamily="@font/rubik"/>
+
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up_btn"
+            android:layout_width="343dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/line_two"
+            android:layout_centerHorizontal="true"
+            app:cornerRadius="11dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/log_in_txt"
+            android:layout_width="343dp"
+            android:layout_height="16dp"
+            android:text="Log in"
+            android:lineSpacingExtra="-1sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik"
+            android:layout_below="@id/sign_up_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

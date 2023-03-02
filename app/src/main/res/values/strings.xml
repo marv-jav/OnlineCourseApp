@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OnlineCourseApp</string>
+    <string name="course">Course</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payment">Payment</string>
+</resources>

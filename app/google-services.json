@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456919207062",
+    "project_id": "codefactory-9560a",
+    "storage_bucket": "codefactory-9560a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456919207062:android:d713a4814f3dcd8d31c6b7",
+        "android_client_info": {
+          "package_name": "com.tmmarv.onlinecourseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456919207062-9ukcrqrrh5o09s1n34825j17u9vg7457.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY57XIhOKSzNjyTlgj89CAdWdTKAN5ysM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456919207062-9ukcrqrrh5o09s1n34825j17u9vg7457.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

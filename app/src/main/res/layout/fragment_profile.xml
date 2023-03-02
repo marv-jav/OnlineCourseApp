@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/profile"
+            android:textColor="#3C3A36"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:civ_border_color="@color/color_secondary"
+        app:civ_border_width="4dp"
+        android:src="@drawable/profile_illustrate"
+        android:layout_below="@id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:civ_circle_background_color="@color/color_light_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/avatar"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            app:cardElevation="0dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#BEBAB3"
+            app:cardCornerRadius="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your courses"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rubik_medium"
+                android:textSize="24sp"
+                android:textColor="#3C3A36"/>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            app:cardElevation="0dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#BEBAB3"
+            app:cardCornerRadius="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rubik_medium"
+                android:textSize="24sp"
+                android:textColor="#3C3A36"/>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/payment_card"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            app:cardElevation="0dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#BEBAB3"
+            app:cardCornerRadius="16dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rubik_medium"
+                android:textSize="24sp"
+                android:textColor="#3C3A36"/>
+
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/logout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Log out"
+            android:textColor="#78746D"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/rubik"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

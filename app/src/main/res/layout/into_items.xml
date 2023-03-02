@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_intro"
+        android:layout_width="375dp"
+        android:layout_height="264dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_intro_one"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_below="@id/image_intro"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rubik_medium"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#3C3A36"
+        android:textSize="24sp"
+        android:letterSpacing="-0.02"/>
+    <TextView
+        android:id="@+id/text_intro_two"
+        android:layout_width="341dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_intro_one"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#78746D"
+        android:fontFamily="@font/rubik"/>
+
+</RelativeLayout>

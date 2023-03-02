@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/payment"
+            android:textColor="#3C3A36"
+            android:textSize="24dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/hhy"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/payment_illustrate"
+        android:layout_below="@id/tool_bar"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/hhy">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet balance"
+            android:fontFamily="@font/rubik"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16sp"
+            android:textColor="#78746D"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="343dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            app:cardElevation="0dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#BEBAB3"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₦"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textSize="24sp"
+                    android:textColor="#3C3A36"/>
+                <TextView
+                    android:id="@+id/balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textSize="24sp"
+                    android:textColor="#3C3A36"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/make_deposit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cornerRadius="15dp"
+            android:text="Make deposit"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik_medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can make down deposits to purchase courses \n further in the future"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
